@@ -3,47 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ranking Ôxe Maker 2025 </title>
+    <title>🏆 Ranking Buzz Line - Cesar School </title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
-    <div class="sponsors">
-      <img src="img/pe.png" alt="Patrocinador 1" />
-      <img src="img/GRE.png" alt="Patrocinador 2" />
-      
-    </div>
-
-    <h1>Ranking Buzz Line  </h1>
-
-    <div class="ranking-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Posição</th>
-            <th>Equipe</th>
-            <th>Tempo (s)</th>
-          </tr>
-        </thead>
-        <tbody id="rankingBody">
+    <!-- Header com informações do evento -->
+    <header class="header">
+      <div class="header-content">
+        <img src="img/logo_cesar_fundo_laranja__1_-removebg-preview.png" alt="Cesar School" class="cesar-logo-img">
         
-          <tr>
-            <td>
-            
-      <tr><td></td><td>MURAKAMI 1</td><td></td></tr>
-           <tr><td></td><td>MURAKAMI 2</td><td>38.65</td></tr>
-           <tr><td></td><td>8BIT</td><td></td></tr>
-           <tr><td></td><td>LASERLINE</td><td></td></tr>
-           <tr><td></td><td>NANOTROIA</td><td>34.6</td></tr>
-           <tr><td></td><td>CHAMPIONS DANTAS</td><td>30.83</td></tr>
-           <tr><td></td><td>EJOMAC</td><td>32.8</td></tr>
-          <tr><td></td><td>ODISSEIA</td><td>20.92</td></tr>
-          
+        </div>
+      </div>
+    </header>
 
-        </tbody>
-      </table>
+    <!-- Estatísticas do evento -->
+    <div class="stats-container">
+      <div class="stat-card">
+        <i class="fas fa-users"></i>
+        <span class="stat-number" id="totalTeams">8</span>
+        <span class="stat-label">Equipes</span>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-clock"></i>
+        <span class="stat-number" id="completedRuns">5</span>
+        <span class="stat-label">Tempos Registrados</span>
+      </div>
+      <div class="stat-card">
+        <i class="fas fa-trophy"></i>
+        <span class="stat-number" id="bestTime">20.92s</span>
+        <span class="stat-label">Melhor Tempo</span>
+      </div>
     </div>
 
-   
+    <!-- Filtros -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">
+        <i class="fas fa-list"></i> Todas
+      </button>
+      <button class="filter-btn" data-filter="completed">
+        <i class="fas fa-check-circle"></i> Com Tempo
+      </button>
+      <button class="filter-btn" data-filter="pending">
+        <i class="fas fa-clock"></i> Pendentes
+      </button>
+    </div>
+
+    <!-- Ranking principal -->
+    <div class="ranking-wrapper">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th><i class="fas fa-medal"></i> Posição</th>
+              <th><i class="fas fa-robot"></i> Equipe</th>
+              <th><i class="fas fa-stopwatch"></i> Tempo (s)</th>
+              <th><i class="fas fa-chart-line"></i> Status</th>
+            </tr>
+          </thead>
+          <tbody id="rankingBody">
+            <tr><td></td><td>MURAKAMI 1</td><td></td><td><span class="status pending">Pendente</span></td></tr>
+            <tr><td></td><td>MURAKAMI 2</td><td>38.65</td><td><span class="status completed">Concluído</span></td></tr>
+            <tr><td></td><td>8BIT</td><td></td><td><span class="status pending">Pendente</span></td></tr>
+            <tr><td></td><td>LASERLINE</td><td></td><td><span class="status pending">Pendente</span></td></tr>
+            <tr><td></td><td>NANOTROIA</td><td>34.6</td><td><span class="status completed">Concluído</span></td></tr>
+            <tr><td></td><td>CHAMPIONS DANTAS</td><td>30.83</td><td><span class="status completed">Concluído</span></td></tr>
+            <tr><td></td><td>EJOMAC</td><td>10.03</td><td><span class="status completed">Concluído</span></td></tr>
+            <tr><td></td><td>ODISSEIA</td><td>19.03</td><td><span class="status completed">Concluído</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Patrocinadores -->
+    <footer class="sponsors">
+      <div class="sponsors-content">
+        <h3>Patrocinadores</h3>
+        <div class="sponsors-logos">
+          <img src="img/cesar_School_icon-removebg-preview.png" alt="Patrocinador 1" />
+          <img src="img/GRE.png" alt="Patrocinador 2" />
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

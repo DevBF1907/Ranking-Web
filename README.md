@@ -6,7 +6,7 @@
 [![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20%7C%20CSS3%20%7C%20JavaScript-orange.svg)](https://developer.mozilla.org/)
 [![Responsivo](https://img.shields.io/badge/Responsivo-✅-green.svg)](https://responsive.design/)
 
-> **Sistema de ranking dinâmico e profissional para competições de robôs seguidores de linha, desenvolvido em parceria com a Cesar School para o Ôxe Maker 2025.**
+> **Sistema de ranking dinâmico e profissional para competições de robôs seguidores de linha, desenvolvido em parceria com a Cesar School.**
 
 ## 📋 Índice
 
